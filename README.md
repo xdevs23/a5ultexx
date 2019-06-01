@@ -23,8 +23,6 @@ For build Unofficial Android Pie 9.0 add this into your local romservice.xml
 
 mkdir .repo/local_manifests
 
-nano .repo/local_manifests/roomservice.xml
-
 <?xml version="1.0" encoding="UTF-8"?>
   <manifest>
   
@@ -35,7 +33,7 @@ nano .repo/local_manifests/roomservice.xml
     <project name="LineageOS/android_external_sony_boringssl-compat" path="external/sony/boringssl-compat" remote="github" revision="lineage-16.0" />
     
     <!-- Device -->
-    <project name="Soft-Bullet/android_device_samsung_a5ultexx-7" path="device/samsung/a5ultexx" remote="github" revision="pie" />
+    <project name="Soft-Bullet/android_device_samsung_a5ultexx--" path="device/samsung/a5ultexx" remote="github" revision="pie" />
     
     <!-- Kernel -->
     <project name="Soft-Bullet/android_kernel_samsung_msm8916" path="kernel/samsung/msm8916" remote="github" revision="lineage-16.0" />
