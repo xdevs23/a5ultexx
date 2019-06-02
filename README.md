@@ -23,6 +23,8 @@ For build Unofficial Android Pie 9.0 add this into your local romservice.xml
 
 mkdir .repo/local_manifests
 
+nano .repo/local_manifests/roomservice.xml
+
 <?xml version="1.0" encoding="UTF-8"?>
   <manifest>
   
