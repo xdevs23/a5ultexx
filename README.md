@@ -33,7 +33,7 @@ mkdir .repo/local_manifests
     <project name="LineageOS/android_external_sony_boringssl-compat" path="external/sony/boringssl-compat" remote="github" revision="lineage-16.0" />
     
     <!-- Device -->
-    <project name="Soft-Bullet/android_device_samsung_a5ultexx--" path="device/samsung/a5ultexx" remote="github" revision="pie" />
+    <project name="Soft-Bullet/android_device_samsung_a5ultexx" path="device/samsung/a5ultexx" remote="github" revision="pie" />
     
     <!-- Kernel -->
     <project name="Soft-Bullet/android_kernel_samsung_msm8916" path="kernel/samsung/msm8916" remote="github" revision="lineage-16.0" />
