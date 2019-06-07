@@ -51,6 +51,16 @@ LOCAL_MODULE_PATH  := $(TARGET_OUT_VENDOR)/etc/init/hw
 include $(BUILD_PREBUILT)
 
 ######################
+### init.qcom.men.sh
+Include $(CLEAR_VARS)
+LOCAL_MODULE       := init.qcom.mem.sh
+LOCAL_MODULE_TAGS  := optional eng
+LOCAL_MODULE_CLASS := ETC
+LOCAL_SRC_FILES    := bin/init.qcom.mem.sh
+LOCAL_MODULE_PATH  := $(TARGET_OUT_VENDOR_EXECUTABLES)
+include $(BUILD_PREBUILT)
+
+######################
 ### init.qcom.rc
 include $(CLEAR_VARS)
 LOCAL_MODULE       := init.qcom.rc
@@ -58,6 +68,16 @@ LOCAL_MODULE_TAGS  := optional eng
 LOCAL_MODULE_CLASS := ETC
 LOCAL_SRC_FILES    := etc/$(LOCAL_MODULE)
 LOCAL_MODULE_PATH  := $(TARGET_OUT_VENDOR)/etc/init/hw
+include $(BUILD_PREBUILT)
+
+######################
+### init.qcom.power.rc
+include $(CLEAR_VARS)
+LOCAL_MODULE       := init.qcom.power.rc
+LOCAL_MODULE_TAGS  := optional eng
+LOCAL_MODULE_CLASS := ETC
+LOCAL_SRC_FILES    := etc/init.qcom.power.rc
+LOCAL_MODULE_PATH  := $(TARGET_OUT_VENDOR_ETC)/init/hw
 include $(BUILD_PREBUILT)
 
 ######################
