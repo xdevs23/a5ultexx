@@ -32,6 +32,8 @@ on init
     chmod 0660 /sys/class/android_usb/android0/terminal_version
 
 on charger
+    write /sys/fs/selinux/enforce 0
+    class_start charger
     setprop sys.usb.config mass_storage
 
 on fs
@@ -41,7 +43,7 @@ on fs
     write /sys/class/android_usb/android0/f_ffs/aliases adb
     setprop sys.usb.ffs.aio_compat 1
 
-service qcom-usb-sh /system/bin/sh /init.qcom.usb.sh
+service qcom-usb-sh /system/bin/sh /vendor/etc/init/hw/init.qcom.usb.sh
     class main
     user root
     oneshot
