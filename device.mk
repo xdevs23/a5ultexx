@@ -104,6 +104,10 @@ PRODUCT_PACKAGES += \
     libboringssl-compat
 
 # Camera
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/external_camera_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/external_camera_config.xml
+
+# Camera
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     camera2.portability.force_api=1
 
@@ -189,8 +193,8 @@ PRODUCT_PACKAGES += \
     libshim_gps
 
 # Headers
-PRODUCT_VENDOR_KERNEL_HEADERS := \
-    hardware/qcom/msm8916/kernel-headers
+#PRODUCT_VENDOR_KERNEL_HEADERS := \
+#   hardware/qcom/msm8916/kernel-headers
 
 # HIDL
 DEVICE_MANIFEST_FILE := \
@@ -322,6 +326,7 @@ PRODUCT_PACKAGES += \
     init.qcom.post_boot.sh \
     init.qcom.rc \
     init.qcom.sh \
+    init.qcom.power.rc \
     init.qcom.uicc.sh \
     init.qcom.usb.rc \
     init.qcom.usb.sh \
